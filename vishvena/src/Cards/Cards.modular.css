@@ -1,0 +1,86 @@
+.cards-container {
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    padding-top: 70px;
+    padding-left: 100px;
+    
+   
+  }
+ 
+  .cards-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cards-title span {
+    color: #111827;
+  }
+  
+  .cards-subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+  }
+  
+  /* Tabs */
+  .cards-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cards-tab {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #d1d5db;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    color: #374151;
+  }
+  
+  .cards-tab.active {
+    background: #111827;
+    color: white;
+    border-color: #111827;
+  }
+  
+  .cards-tab:hover {
+    background: #f3f4f6;
+  }
+  
+  /* Content */
+  .cards-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  }
+  
+  .cards-icon {
+    flex-shrink: 0;
+  }
+  
+  .cards-text h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+  
+  .cards-text p {
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  

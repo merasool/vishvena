@@ -1,0 +1,79 @@
+.sider-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .sider-heading-small {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sider-heading-main {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .sider-slide-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .sider-slide {
+    display: none;
+  }
+  
+  .sider-slide.active {
+    display: block;
+  }
+  
+  .sider-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .sider-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .sider-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .sider-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .sider-card p {
+    margin-top: 0.8rem;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .sider-dots {
+    margin-top: 1rem;
+  }
+  
+  .sider-dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .sider-dot.active {
+    background-color: #333;
+  }
+  

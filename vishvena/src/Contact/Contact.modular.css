@@ -1,0 +1,96 @@
+.contact-footer {
+    background: #10004b; /* Dark blue background */
+    color: #fff;
+    padding: 40px 80px;
+    font-family: "Arial", sans-serif;
+    width: 100%;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: fit-content;
+  }
+  
+  .contact-left {
+    flex: 1;
+    min-width: 200px;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  .contact-middle,
+  .contact-links,
+  .contact-newsletter {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .contact-middle h4,
+  .contact-links h4,
+  .contact-newsletter h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .contact-middle p,
+  .contact-newsletter p {
+    font-size: 14px;
+    margin: 5px 0;
+    opacity: 0.9;
+  }
+  
+  .contact-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .contact-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+  
+  .contact-links ul li a:hover {
+    color: #a9b8ff;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .newsletter-form input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px 0 0 20px;
+    outline: none;
+    flex: 1;
+    color: white;
+    padding-left: 100px;
+
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    border: none;
+    background: #7a88f5;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .newsletter-form button:hover {
+    background: #5060d8;
+  }
+  

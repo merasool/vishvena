@@ -1,0 +1,131 @@
+/* Head Container */
+.head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #ff7f7f;
+    margin-top: 0;
+    position: fixed;
+    top: 50px; /* Position directly below navbar */
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    box-sizing: border-box;
+    height:80px;
+}
+
+/* Navigation Links on Right */
+.nav-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    order: 2; /* Tags are on the right */
+}
+
+.tags {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Logo on Left */
+.logo-container {
+    flex: 0 0 auto; /* Don't grow or shrink */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    order: 1; /* Logo is on the left */
+    margin-right: auto; /* Push to the left */
+}
+
+.logo {
+    height: 80px;
+    width: 300px;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .head-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+    
+    .nav-left {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .tags {
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .logo-container {
+        justify-content: center;
+    }
+    
+    .logo {
+        height: 60px;
+        width: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tags {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    .logo {
+        height: 50px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .head-container {
+        padding: 10px 15px;
+        top: 100px; /* Adjust for mobile navbar height */
+    }
+    
+    .tags {
+        gap: 10px;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
+    .logo {
+        height: 40px;
+        width: 160px;
+    }
+}

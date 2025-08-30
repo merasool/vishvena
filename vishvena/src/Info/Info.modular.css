@@ -1,0 +1,25 @@
+.Info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 190px;
+    padding-top: 50px;
+    width: 1200px;
+  }
+  
+  .info-text {
+    flex: 1;
+  }
+  
+  .info-image img {
+    max-width: 550px;
+    border-radius: 10px;
+    object-fit: cover;
+    padding-right: 100px;
+    padding-top:80px ;
+  }
+  .small{
+    color: grey;
+  }
